@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    min-height: 100%;
+    background-color: rgb(25, 17, 93);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-header,
+.sidebar-center,
+.sidebar-footer {
+    width: 80%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+
+
+}
+
+.sidebar-footer {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.brand {
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.list-item-icon {
+    width: 30px;
+    font-size: 18px;
+}
+
+.list-item:hover,
+.list-item.active {
+    background-color: rgb(90, 63, 148);
+
+}
+
+.dark {
+    background-color: rgb(25, 17, 93);
+
+}
+
+.mid {
+    background-color: rgb(44 107 138);
+}
+
+.light {
+    background-color: rgb(222, 222, 222);
+
+}
+
+.colorswitcher {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sidebar {
+        width: 20%;
+    }
+
+    .list-item-text {
+        display: none;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .sidebar-footer {
+        flex-direction: column;
+    }
+
+    .colorswitcher {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+}
+
+.sidebar .dark {
+    background-color: black;
+    color: #fff;
+}
+
+.list-item:hover,
+.list-item.active.dark {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.sidebar.light {
+    background-color: rgb(237 237 237);
+    color: #000;
+}
+
+.list-item.active.light {
+    color: rgb(0, 0, 0);
+    background-color: rgb(193, 201, 205);
+}
+
+
+
+.sidebar .mid {
+    color: rgb(255 255 255);
+    background-color: rgb(44 107 138);
+}
+
+.list-item.active.mid {
+    color: rgb(18, 113, 142);
+    background-color: rgb(242 247 249);
+}
