@@ -1,1 +1,1 @@
-# sidebarswitcher - change your sidebar themes,with   color  Box  switcher 
+# sidebarswitcher - change your sidebar theme with   color  Box  switcher 
